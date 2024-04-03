@@ -48,15 +48,8 @@ public class AirTransportation extends Transport{
     }
 
     public String toString(){
-        return "\nTipo Transporte:"+ getTransportType()+" \n" +
-                "              ID: " + getId() + "\n" +
-                "         Origem: \n" +
-                "        Destino: \n" +
-                "          Preço:  \n" +
-                "     Honorarios: \n" +
-                "    Preço Final: \n" +
-                "           Nome: \n" +
-                "  NºContentores: n";
+        return super.toString()+                "           Nome:"+name+ "\n" +
+                "  NºContentores:"+numberOfContainers+"\n";
     }
 
 }
