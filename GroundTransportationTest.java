@@ -39,13 +39,13 @@ public class GroundTransportationTest {
     @Test
     public void testToString() {
         String expected = "\nTipo Transporte: Transporte Terrestre\n" +
-                          "             ID: " + groundTransport.getId() + "\n" +
-                          "         Origem: \n" +
-                          "        Destino: \n" +
-                          "          Preço:  0,00€\n" +
-                          "     Honorarios: 3,00%\n" +
-                          "    Preço Final: 0,00€\n" +
-                          "      Matricula: ABC123\n";
+                "             ID: " + groundTransport.getId() + "\n" +
+                "         Origem: \n" +
+                "        Destino: \n" +
+                "          Preço:  0,00€\n" +
+                "     Honorarios: 3,00%\n" +
+                "    Preço Final: 0,00€\n" +
+                "      Matricula: ABC123\n";
         assertEquals(expected, groundTransport.toString());
     }
 

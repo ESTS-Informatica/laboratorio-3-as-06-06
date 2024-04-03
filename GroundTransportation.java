@@ -26,15 +26,15 @@ public class GroundTransportation extends Transport{
     }
 
     public double getPriceWithFees(){
-        return getPrice()*getFees();
+        return getPrice()+getFees();
     }
     public String getTransportType(){
-        return "Transport Terrestre";
+        return "Transporte Terrestre";
     }
 
-    public String toStrng(){
-        return super.toString() + "   Preço Final:"+getPriceWithFees()+"\n" +
-                "      Matricula:"+licensePlate+ "\n";
+    @Override
+    public String toString() {
+        return super.toString() +
+                "      Matricula: " + licensePlate + "\n";
     }
-
 }
