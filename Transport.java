@@ -5,7 +5,7 @@
  * @author POO
  */
 
-public abstract class Transport {
+public  class Transport {
 
     private static int auto = 0; 
 
@@ -122,5 +122,4 @@ public abstract class Transport {
         return "Transporte genérico";
     }
 
-    public abstract String toStrng();
 }

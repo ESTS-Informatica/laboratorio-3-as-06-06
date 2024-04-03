@@ -1,4 +1,5 @@
 public class GroundTransportation extends Transport{
+    protected int numberOfPackages;
     private String licensePlate;
 
 
@@ -25,12 +26,12 @@ public class GroundTransportation extends Transport{
     }
 
     public double getPriceWithFees(){
-        return getFees()*getPrice();
+        return getPrice()*getFees();
     }
     public String getTransportType(){
         return "Transport Terrestre";
     }
-    @Override
+
     public String toStrng(){
         return super.toString() + "   Preço Final:"+getPriceWithFees()+"\n" +
                 "      Matricula:"+licensePlate+ "\n";
