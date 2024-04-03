@@ -23,4 +23,22 @@ public class GroundTransportation extends Transport{
             this.licensePlate= licensePlate;
         }
     }
+
+    public double getPriceWithFees(){
+        return getFees()*getPrice();
+    }
+    public String getTransportType(){
+        return "Transport Terrestre";
+    }
+    public String toStrng(){
+        return "\nTipo Transporte: " + getTransportType()+ "\n" +
+                "             ID: " + getId() + "\n" +
+                "         Origem: \n" +
+                "        Destino: \n" +
+                "          Preço:  0,00€\n" +
+                "     Honorarios: 3,00%\n" +
+                "    Preço Final: 0,00€\n" +
+                "      Matricula: ABC123\n";
+    }
+
 }
